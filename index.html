@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create an HTML page on which the left side should be home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="#home"><i class="fas fa-home"></i> Home</a>
+      </li>
+      <li>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+      </li>
+      <li>
+        <a href="#information"><i class="fas fa-info-circle"></i> Information</a>
+      </li>
+      <li>
+        <a href="#guide"><i class="fas fa-book"></i> Guide</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div id="home" class="content-section">
+      <section class="relative bg-gray-900 py-16">
+        <div class="container mx-auto px-4">
+          <div class="glide" data-glide data-glide-autoplay="5000" data-glide-nav="true" data-glide-pagination="true">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="relative flex flex-col items-center justify-center">
+                    <div class="bg-gray-800 opacity-75 absolute inset-0"></div>
+                    <!-- Overlay -->
+                    <img class="h-96 w-full" src="https://i.ibb.co/LCJ4QGM/Untitled-2.webp" alt="Banner Image 1"
+                      class="w-full h-auto object-cover" />
+                    <div class="relative z-10 text-center">
+                      <h2 class="text-4xl font-bold text-white mb-4">
+                        Welcome to Our Home
+                      </h2>
+                      <p class="text-xl text-white mb-8">
+                        Discover a place of comfort and style
+                      </p>
+                      <a href="#"
+                        class="bg-white text-gray-900 py-3 px-6 rounded-full uppercase tracking-wide font-semibold shadow-lg hover:bg-gray-300 transition-colors">Explore
+                        Now</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="contact" class="content-section hidden">
+      <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+            <p class="text-lg text-gray-600 mb-8">
+              Have any questions or inquiries? We'd love to hear from you.
+            </p>
+            <form class="max-w-lg mx-auto">
+              <div class="mb-6">
+                <input type="text" placeholder="Your Name"
+                  class="w-full px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div class="mb-6">
+                <input type="email" placeholder="Your Email"
+                  class="w-full px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div class="mb-6">
+                <textarea placeholder="Your Message"
+                  class="w-full px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit"
+                  class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition-colors">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="information" class="content-section hidden">
+      <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Information</h2>
+            <p class="text-lg text-gray-600 mb-8">
+              Here's some important information about our services.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                  Quality Assurance
+                </h3>
+                <p class="text-gray-600">
+                  We pride ourselves in delivering top-notch quality in every
+                  aspect of our services.
+                </p>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                  24/7 Customer Support
+                </h3>
+                <p class="text-gray-600">
+                  Our dedicated support team is available round the clock to
+                  assist you with any queries or issues.
+                </p>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                  Fast &amp; Reliable Delivery
+                </h3>
+                <p class="text-gray-600">
+                  We ensure quick and dependable delivery to get your products
+                  to you on time.
+                </p>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                  Satisfaction Guaranteed
+                </h3>
+                <p class="text-gray-600">
+                  Your satisfaction is our priority. We strive to exceed your
+                  expectations with our services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="guide" class="content-section hidden">
+      <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Guide</h2>
+            <p class="text-lg text-gray-600 mb-8">
+              Here's a step-by-step guide to help you get started.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                  Step 1: Sign Up
+                </h3>
+                <p class="text-gray-600">
+                  Create an account to access all the features and benefits of
+                  our platform.
+                </p>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                  Step 2: Explore
+                </h3>
+                <p class="text-gray-600">
+                  Browse through our wide range of options and discover what
+                  interests you.
+                </p>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                  Step 3: Select
+                </h3>
+                <p class="text-gray-600">
+                  Choose the items or services that meet your needs and add
+                  them to your cart.
+                </p>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                  Step 4: Checkout
+                </h3>
+                <p class="text-gray-600">
+                  Review your selections and proceed to the secure checkout
+                  process.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
